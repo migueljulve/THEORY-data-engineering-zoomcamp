@@ -32,6 +32,9 @@ docker run -it --rm \
 
 ### Alternative Approach - Bind Mount
 
+> [!CAUTION]
+> **Warning:** We use this one 
+
 First create the directory, then map it:
 
 ```bash
@@ -47,9 +50,6 @@ docker run -it \
 ```
 
 ### Named Volume vs Bind Mount  
-
-> [!CAUTION]
-> **CUIDADO:** We use this one 
 
 * **Named volume** (`name:/path`): Managed by Docker, easier
 * **Bind mount** (`/host/path:/container/path`): Direct mapping to host filesystem, more control
