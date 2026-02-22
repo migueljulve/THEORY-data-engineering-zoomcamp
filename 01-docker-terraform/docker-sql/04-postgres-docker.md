@@ -47,8 +47,9 @@ docker run -it \
 ```
 
 ### Named Volume vs Bind Mount  
-```diff
-- NOTA: Este contenedor se borra si no usas volúmenes.
+
+> [!CAUTION]
+> **CUIDADO:** Si borras el volumen, pierdes la base de datos de taxis.
 
 * **Named volume** (`name:/path`): Managed by Docker, easier
 * **Bind mount** (`/host/path:/container/path`): Direct mapping to host filesystem, more control
