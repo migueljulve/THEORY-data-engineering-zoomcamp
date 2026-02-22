@@ -46,7 +46,9 @@ docker run -it \
   postgres:18
 ```
 
-### Named Volume vs Bind Mount  $$\color{red}{We use this one, because we are in a virtula environment(codespaces)}$$
+### Named Volume vs Bind Mount  
+```diff
+- NOTA: Este contenedor se borra si no usas volúmenes.
 
 * **Named volume** (`name:/path`): Managed by Docker, easier
 * **Bind mount** (`/host/path:/container/path`): Direct mapping to host filesystem, more control
